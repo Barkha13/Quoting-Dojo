@@ -9,9 +9,9 @@
 <body>
     <h1>Here are the Awesome Quotes</h1>
     <div style="padding:30px;">
-        <% for (var x in quotes) { %>
-            <h2>"<%= quotes[x].quote %>"</h2>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-<%= quotes[x].name %> &nbsp; <%=quotes[x].createdAt%></p>
+        <% for (var x of quotes) { %>
+            <h2>"<%= x.quote %>"</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-<%= x.name %> &nbsp; <%=x.createdAt%></p>
             <hr>
         <% } %>
     </div>
